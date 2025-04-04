@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #343a40;       /* Cor principal: botão e destaque escuro */
+  --background-color: #f8f9fa;    /* Fundo claro e leve */
+  --text-color: #495057;          /* Texto padrão, legível e frio */
+  --hover-color: #212529;         /* Hover escuro para contraste */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color); /* Corrigido */
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+p.subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.section {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.section p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Formulário */
+form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Botão */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
